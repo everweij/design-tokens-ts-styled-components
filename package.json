@@ -1,0 +1,48 @@
+{
+  "name": "design-tokens-ts-styled-components",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "Erik Verweij",
+  "main": "dist/index.js",
+  "module": "dist/design-tokens-ts-styled-components.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --env=jsdom",
+    "lint": "tsdx lint"
+  },
+  "peerDependencies": {
+    "react": ">=16.8",
+    "styled-components": ">=4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "none"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^9.3.0",
+    "@types/jest": "^24.0.19",
+    "@types/react": "^16.9.9",
+    "@types/react-dom": "^16.9.2",
+    "@types/styled-components": "^4.1.19",
+    "husky": "^3.0.9",
+    "jest-styled-components": "^6.3.3",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "styled-components": "^4.4.0",
+    "tsdx": "^0.10.5",
+    "tslib": "^1.10.0",
+    "typescript": "^3.6.4"
+  }
+}
